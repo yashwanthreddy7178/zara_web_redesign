@@ -22,7 +22,7 @@ const SignupPage = () => {
     };
 
     return (
-        <div className="min-h-screen bg-login">
+        <div className="min-h-screen bg-login pt-20">
             <Header />
             <div className="flex items-center justify-center h-screen">
                 <form onSubmit={handleSubmit} className="bg-white p-8 rounded shadow-md w-96">

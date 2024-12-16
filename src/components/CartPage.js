@@ -5,10 +5,10 @@ import Footer from './Footer';
 import Header from './Header';
 
 const products = [
-    { id: 1, name: 'Chunky Leather', price: '$100.00', image: './images/Chunky Leather.png' },
-    { id: 2, name: 'Double Buckle Leather', price: '$100.00', image: './images/Double Buckle Leather.png' },
-    { id: 3, name: 'Dress Penny Loafers', price: '$100.00', image: './images/Dress Penny Loafers.png' },
-    { id: 4, name: 'Laced Leather Boots', price: '$20.00', image: './images/Laced Leather Boots.png' },
+    { id: 1, name: 'Chunky Leather', price: '$100.00', size: '10', image: './images/Chunky Leather.png' },
+    { id: 2, name: 'Double Buckle Leather', price: '$100.00', size: '11', image: './images/Double Buckle Leather.png' },
+    { id: 3, name: 'Dress Penny Loafers', price: '$100.00', size: '9', image: './images/Dress Penny Loafers.png' },
+    { id: 4, name: 'Laced Leather Boots', price: '$20.00', size: '10', image: './images/Laced Leather Boots.png' },
 ];
 
 const CartPage = () => {
@@ -42,7 +42,8 @@ const CartPage = () => {
                                     <img src={product.image} alt={product.name} className="w-50 h-50 object-cover mr-4" />
                                     <div>
                                         <h3 className="text-lg font-semibold">{product.name}</h3>
-                                        <span className="text-gray-600">{product.price}</span>
+                                        <span className="text-gray-600 font-bold">{product.price}</span>
+                                        <span className="text-gray-600"> | Size: {product.size}</span>
                                     </div>
                                 </div>
                                 <div className="flex items-center">
