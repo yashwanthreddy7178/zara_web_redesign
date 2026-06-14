@@ -1,5 +1,5 @@
 import { Heart, ShoppingCart } from 'lucide-react';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import Footer from './Footer';
 import Header from './Header';
 
@@ -26,14 +26,14 @@ const ProductPage = () => {
     const MRP = 99.90; // Define the MRP
     const currentPrice = 89.90; // Current price
 
-    const thumbnails = [
+    const thumbnails = useMemo(() => [
         './images/product2.png',
         './images/product3.png',
         './images/product4.png',
         './images/product5.png',
         './images/product6.png',
         './images/product7.png',
-    ];
+    ], []);
 
     const handleColorSelect = (color) => {
         setSelectedColor(color);

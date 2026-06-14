@@ -31,14 +31,6 @@ const Header = () => {
     setIsAccountOptionsOpen(!isAccountOptionsOpen);
   };
 
-  const handleLoginClick = () => {
-    navigate('/login');
-  };
-
-  const handleSignupClick = () => {
-    navigate('/signup');
-  };
-
   const handleWishlistClick = () => {
     navigate('/wishlist');
   };
